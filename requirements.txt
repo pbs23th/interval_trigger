@@ -1,0 +1,4 @@
+websocket-client~=1.3.3
+requests
+slack_sdk
+redis
