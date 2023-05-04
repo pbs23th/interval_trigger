@@ -20,7 +20,7 @@ def is_calculation_open_close_interval(data1, data2, item_key):
     interval_price = ((gap_price / open_price) * Decimal('100')).quantize(Decimal('0.01'), rounding=ROUND_DOWN)
     if 'trigger' in data2:
         if data2['trigger'] == 'false':
-            if interval_price > Decimal('1'):
+            if interval_price > Decimal('3'):
                 data2['trigger'] = 'true'
                 data1['interval'] = str(interval_price)
                 data1['exchange'] = "okx"
@@ -29,7 +29,7 @@ def is_calculation_open_close_interval(data1, data2, item_key):
                 print('발동 : ', data1)
                 print('간격 : ', interval_price)
                 rd.set(item_key, json.dumps(data2))
-            elif interval_price < Decimal('-1'):
+            elif interval_price < Decimal('-5'):
                 data2['trigger'] = 'true'
                 data1['interval'] = str(interval_price)
                 data1['exchange'] = "okx"

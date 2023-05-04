@@ -1,5 +1,5 @@
 import json
-
+from interval_trigger.logset import loggers
 import redis
 from interval_trigger.slack.send_massage import send_message
 
@@ -21,6 +21,7 @@ class Subscriber:
     def send_message(self, data):
         print(f"send_slack - {data}")
         send_data = self.phase_data(json.loads(data))
+        loggers().info(str(data))
         send_message(send_data)
 
     def phase_data(self, data):

@@ -2,7 +2,6 @@ import json
 import datetime
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-
 slack_token = 'xoxb-2952903029057-4087212464261-tEfPQI531QHQCSXIPArMdjVH' # Bot OAuth Token
 client = WebClient(token=slack_token)
 
