@@ -2,7 +2,7 @@ import json
 import datetime
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-slack_token = 'xoxb-2952903029057-4087212464261-tEfPQI531QHQCSXIPArMdjVH' # Bot OAuth Token
+slack_token = 'xoxb-2952903029057-4087212464261-SZtveemq5gZHTJvWCgVv9emg' # Bot OAuth Token
 client = WebClient(token=slack_token)
 
 
@@ -10,7 +10,7 @@ def send_message(data):
     try:
         msg = dataphase(data)
         response = client.chat_postMessage(
-            channel="dantaro_perpetual", # Channel ID
+            channel="interval_trigger", # Channel ID
             text='perpetual 에러',
             blocks=msg,
         )
