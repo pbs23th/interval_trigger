@@ -21,15 +21,18 @@ def is_calculation_open_close_interval(data1, data2, item_key):
     interval_price = ((gap_price / open_price) * Decimal('100')).quantize(Decimal('0.01'), rounding=ROUND_DOWN)
     if 'trigger' in data2:
         if data2['trigger'] == 'false':
-            if interval_price > Decimal('3'):
+            if interval_price > Decimal('5'):
                 data2['trigger'] = 'true'
                 data1['interval'] = str(interval_price)
                 data1['exchange'] = "okx"
                 data1['mode'] = "spot"
-                Publisher().publish('channel', json.dumps(data1))
                 print('발동 : ', data1)
                 print('간격 : ', interval_price)
-                rd.set(item_key, json.dumps(data2))
+                data1['vol'] = data2['volCcy24h']
+                print('vol : ', data2['volCcy24h'])
+                if Decimal(str(data2['volCcy24h'])) > Decimal('100000'):
+                    Publisher().publish('channel', json.dumps(data1))
+                    rd.set(item_key, json.dumps(data2))
             # elif interval_price < Decimal('-5'):
             #     data2['trigger'] = 'true'
             #     data1['interval'] = str(interval_price)

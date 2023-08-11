@@ -2,7 +2,7 @@ import json
 import datetime
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
-slack_token = 'xoxb-2952903029057-4087212464261-SZtveemq5gZHTJvWCgVv9emg' # Bot OAuth Token
+slack_token = 'xoxb-2952903029057-4087212464261-4q4NJ1I54kFnZrMm2QGnGK7n' # Bot OAuth Token
 client = WebClient(token=slack_token)
 
 
@@ -62,7 +62,7 @@ def dataphase(data):
 			"type": "section",
 			"text": {
 				"type": "mrkdwn",
-				"text": "간격 : " + str(data['interval']) + '%'
+				"text": "간격 : " + str(data['signal_interval']) + '%'
 			}
 		},
 		{
@@ -81,8 +81,8 @@ def dataphase(data):
 
 if __name__ == '__main__':
 	respone_data = {
-		'exchange': 'upbit',
-		'mode': 'spot',
+		'exchange': 'test',
+		'mode': 'test',
 		'market': 'KRW-BTC',
 		'interval': '1',
 		'price': '132165', }

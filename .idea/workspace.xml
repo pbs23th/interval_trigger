@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bdbf98bf-c8ee-4bcf-a97c-68505f40186a" name="변경" comment="version 1.0">
+    <list default="true" id="bdbf98bf-c8ee-4bcf-a97c-68505f40186a" name="변경" comment="하락신호 주석처리">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interval_trigger/pubsub/sub.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_trigger/pubsub/sub.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interval_trigger/slack/send_massage.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_trigger/slack/send_massage.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interval_trigger/ws/okx_ws_spot.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_trigger/ws/okx_ws_spot.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interval_trigger/ws/okx_ws_swap.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_trigger/ws/okx_ws_swap.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interval_trigger/ws/upbit_ws.py" beforeDir="false" afterPath="$PROJECT_DIR$/interval_trigger/ws/upbit_ws.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +31,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "C:/code/html",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "configurable.group.appearance"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/code/html&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\code\yeonho\interval_trigger" />
@@ -59,7 +58,7 @@
       <recent name="C:\code\yeonho\interval_trigger\interval_trigger" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.send_massage">
+  <component name="RunManager" selected="Python.okx_ws_spot">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="interval_trigger" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -82,7 +81,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="okx_ws_swap" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="okx_ws_spot" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="interval_trigger" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +94,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interval_trigger/ws/okx_ws_swap.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interval_trigger/ws/okx_ws_spot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -194,11 +193,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.okx_ws_spot" />
+        <item itemvalue="Python.sub" />
         <item itemvalue="Python.send_massage" />
         <item itemvalue="Python.test" />
-        <item itemvalue="Python.sub" />
         <item itemvalue="Python.upbit_ws" />
-        <item itemvalue="Python.okx_ws_swap" />
       </list>
     </recent_temporary>
   </component>
@@ -212,7 +211,24 @@
       <updated>1683100633482</updated>
       <workItem from="1683100637846" duration="675000" />
       <workItem from="1683101780717" duration="1856000" />
-      <workItem from="1683158342944" duration="14851000" />
+      <workItem from="1683158342944" duration="16453000" />
+      <workItem from="1683503780258" duration="1347000" />
+      <workItem from="1683610644012" duration="7467000" />
+      <workItem from="1683676470793" duration="638000" />
+      <workItem from="1683684151104" duration="1272000" />
+      <workItem from="1683688250928" duration="8987000" />
+      <workItem from="1683784926018" duration="1827000" />
+      <workItem from="1683796077800" duration="357000" />
+      <workItem from="1683849691422" duration="42000" />
+      <workItem from="1684215513985" duration="820000" />
+      <workItem from="1684367968759" duration="2414000" />
+      <workItem from="1684454356082" duration="3061000" />
+      <workItem from="1684725206909" duration="955000" />
+      <workItem from="1684824728399" duration="2204000" />
+      <workItem from="1684886473560" duration="4770000" />
+      <workItem from="1685060082211" duration="1190000" />
+      <workItem from="1691641684597" duration="1225000" />
+      <workItem from="1691720170695" duration="3173000" />
     </task>
     <task id="LOCAL-00001" summary="최초 커밋">
       <created>1683102879514</created>
@@ -228,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683178894224</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="하락신호 주석처리">
+      <created>1683190309850</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683190309850</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,14 +271,15 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="최초 커밋" />
     <MESSAGE value="version 1.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="version 1.0" />
+    <MESSAGE value="하락신호 주석처리" />
+    <option name="LAST_COMMIT_MESSAGE" value="하락신호 주석처리" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/interval_trigger$okx_ws_swap.coverage" NAME="okx_ws_swap 커버리지 결과" MODIFIED="1683161372086" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/ws" />
-    <SUITE FILE_PATH="coverage/interval_trigger$send_massage.coverage" NAME="send_massage 커버리지 결과" MODIFIED="1683186797783" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/slack" />
-    <SUITE FILE_PATH="coverage/interval_trigger$okx_ws_spot.coverage" NAME="okx_ws_spot 커버리지 결과" MODIFIED="1683161082976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/ws" />
+    <SUITE FILE_PATH="coverage/interval_trigger$send_massage.coverage" NAME="send_massage 커버리지 결과" MODIFIED="1683191278358" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/slack" />
+    <SUITE FILE_PATH="coverage/interval_trigger$okx_ws_spot.coverage" NAME="okx_ws_spot 커버리지 결과" MODIFIED="1691721064795" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/ws" />
     <SUITE FILE_PATH="coverage/interval_trigger$upbit_ws.coverage" NAME="upbit_ws 커버리지 결과" MODIFIED="1683161529363" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/ws" />
-    <SUITE FILE_PATH="coverage/interval_trigger$sub.coverage" NAME="sub 커버리지 결과" MODIFIED="1683163043272" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/pubsub" />
+    <SUITE FILE_PATH="coverage/interval_trigger$sub.coverage" NAME="sub 커버리지 결과" MODIFIED="1684888144523" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/pubsub" />
     <SUITE FILE_PATH="coverage/interval_trigger$okx_ws_spot__1_.coverage" NAME="okx_ws_spot (1) 커버리지 결과" MODIFIED="1683161358031" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/ws" />
     <SUITE FILE_PATH="coverage/interval_trigger$test.coverage" NAME="test 커버리지 결과" MODIFIED="1683166660680" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interval_trigger/pubsub/logs" />
   </component>
